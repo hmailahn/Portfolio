@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #d47d54;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Header Section */
+
+header {
+    padding: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #814819;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: #f0ac85;
+}
+
+header nav{
+    margin: 7px 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+    text-decoration: none;
+    color: #f0ac85;
+
+}
+/* header/ navbar styles end */
+
+/* hero styles */
+
+.hero {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url('../images/black-and-orange.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-cta {
+    text-align: right;
+    color: #f0ac85;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+
+@media screen and (max-width: 980px) {
+
+    
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+  
+   
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+  
+   
+  }
+  
