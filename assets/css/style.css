@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #d47d54;
+    background-color: var(--primary-color);
     font-family: 'Noto Sans', sans-serif;
     color: var(--secondary-color);
 }
@@ -108,33 +108,41 @@ section h2 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 20px;
 }
 
-.projects h3 {
-    margin-top: 200px;
-}
+ .projects img {
+    border: 5px solid var(--secondary-color);
+    width: 50%;
+ }
+
 .border-right {
     border-right: 4px solid var(--secondary-color);
 }
-#run-buddy {
-    background-image: url(../images/run-buddy.PNG);
-    width: 300px;
-    height: 300px;
-    padding: 20px;
-    margin: 50px;
-    border: 5px solid var(--secondary-color);
+.applications  {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1 12%;
     
 }
 
-#horiseon-marketing {
-    background-image: url(../images/horiseon-marketing.PNG);
-    width: 300px;
-    height: 300px;
-    padding: 20px;
-    margin: 50px;
-    border: 5px solid var(--secondary-color);
+.applications h3 {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px;
+}
+
+.applications img:focus {
+    background-color: var(--primary-color);
+    outline: none;
+}
+
+.applications img:hover {
+    color: var(--primary-color)
 }
 
 .flex-row {
