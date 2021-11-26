@@ -1,3 +1,7 @@
+:root {
+    --primary-color: #f0ac85;
+    --secondary-color: #1d1111; 
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +11,7 @@
 body {
     background-color: #d47d54;
     font-family: 'Noto Sans', sans-serif;
+    color: var(--secondary-color);
 }
 
 /* Header Section */
@@ -14,7 +19,7 @@ body {
 header {
     padding: 20px;
     font-family: 'Noto Sans', sans-serif;
-    background-color: #814819;
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -24,7 +29,7 @@ header h1 {
     font-weight: bold;
     margin: 0;
     font-size: 36px;
-    color: #f0ac85;
+    color: var(--primary-color);
 }
 
 header nav{
@@ -40,7 +45,7 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 22px;
     text-decoration: none;
-    color: #f0ac85;
+    color: var(--primary-color);
 
 }
 /* header/ navbar styles end */
@@ -58,7 +63,87 @@ header nav ul li a {
 
 .hero-cta {
     text-align: right;
-    color: #f0ac85;
+    color: var(--primary-color);
+}
+
+.hero h2 {
+   float: right;
+}
+
+section h2 {
+    float: left;
+    padding: 20px;
+}
+/* end of hero styles */
+
+/* About me */
+
+.about-me {
+    border-right: 4px solid var(--secondary-color);
+    margin: 20px;
+}
+/* end of about me */
+
+/* Work section */
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 4px solid var(--secondary-color);
+    margin: 20px;
+ 
+}
+
+.projects {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#run-buddy {
+    background-image: url(../images/run-buddy.PNG);
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    margin: 50px;
+    border: 5px solid black;
+    
+}
+
+#horiseon-marketing {
+    background-image: url(../images/horiseon-marketing.PNG);
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    margin: 50px;
+    border: 5px solid black;
+}
+
+.flex-row {
+    display: flex;
+}
+/* end of work section */
+
+/* contact info */
+
+.contact-me {
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    border-right: 4px solid var(--secondary-color);
+    margin: 20px;
+}
+
+.contact-me h3 {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
