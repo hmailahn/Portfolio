@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #f0ac85;
-    --secondary-color: #1d1111; 
+    --primary-color: rgb(240, 172, 133);
+    --secondary-color: rgb(29, 17, 17); 
 }
 * {
   margin: 0;
@@ -95,13 +95,7 @@ section h2 {
     align-items: center;
 }
 
-/* .about-me p {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
 
-} */
 /* end of about me */
 
 /* Work section */
@@ -114,21 +108,8 @@ section h2 {
     margin: 20px;
 }
 
-.border-right {
-    /* border-right: 4px solid var(--secondary-color); */
-}
 
-.applications  {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex: 1;
-    align-items: space-between;
-   
-    
-}
+
 
  .project {
     width: 400px;
@@ -136,6 +117,7 @@ section h2 {
     background-color: rgba(black,.1);
     background-size: cover;
     background-repeat: no-repeat;
+    border: 4px solid var(--secondary-color);
 
  }
 
@@ -148,36 +130,47 @@ section h2 {
  .project-text {
      position: absolute;
      bottom: 10%;
-     color: white;
-     background-color: cyan;
+     color: var(--primary-color);
+     background-color: var(--secondary-color);
      padding: 8px;
+     
  }
 
  .project-01 {
      background-image: url("../images/run-buddy.jpg");
      background-position: right;
+     width: 800px;
+     height: 600px;
  }
 
+ .project-02 {
+    background-image: url(../images/horiseon-marketing.PNG);
+ }
+
+ .project-03 {
+    background-image: url(../images/application-3.jpg); 
+}
+
+.project-04 {
+    background-image: url(../images/application-4.jpg); 
+}
+
+.project-05 {
+    background-image: url(../images/application-5.jpg);  
+}
 
 .project h3 {
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    padding: 10px;
+
 }
 
 
 section a:hover {
-    background-color: var(--secondary-color);
+    /* background-color: rgba(240, 172, 133,.3); */
 
 }
 
-.border {
-    border: 5px solid var(--secondary-color);
-}
-
-.flex-row {
-    display: flex;
-}
 /* end of work section */
 
 /* contact info */
@@ -202,6 +195,7 @@ section a:hover {
 .column-layout {
     display: flex;
     justify-content: space-between;
+
 }
 
 .header-column {
@@ -211,6 +205,10 @@ section a:hover {
 .content-column{
 /* width: 100%; */
     /* width: 66%; */
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
