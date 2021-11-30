@@ -118,6 +118,7 @@ section h2 {
     background-repeat: no-repeat;
     border: 4px solid var(--secondary-color);
 
+
  }
 
 .project-layer {
@@ -261,7 +262,29 @@ section h2 {
         font-size: 20px;
       }
     
-     
+    .hero-cta, .hero h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+    } 
+
+    .content-column {
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .column-layout {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .header-column {
+        border-bottom: 4px solid var(--secondary-color);
+        border-right: none;
+    }
+.proje
+    
   
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width: 768px) {
