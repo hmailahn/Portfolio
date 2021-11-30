@@ -1,5 +1,5 @@
 :root {
-    --primary-color: rgb(240, 172, 133);
+    --primary-color: rgb(245, 156, 105);
     --secondary-color: rgb(29, 17, 17); 
 }
 * {
@@ -112,16 +112,31 @@ section h2 {
 
 
  .project {
-    width: 400px;
-    height: 300px;
-    background-color: rgba(black,.1);
+    width: 500px;
+    height: 200px;
     background-size: cover;
     background-repeat: no-repeat;
     border: 4px solid var(--secondary-color);
 
  }
 
- .project a {
+.project-layer {
+    background-color: rgb(29, 17, 17, .5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.project-layer:hover {
+    background-color: rgb(29, 17, 17, .0);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.project a {
      display: block;
      position: relative;
      height: 100%;
@@ -139,8 +154,8 @@ section h2 {
  .project-01 {
      background-image: url("../images/run-buddy.jpg");
      background-position: right;
-     width: 800px;
-     height: 600px;
+     width: 1000px;
+     height: 400px;
  }
 
  .project-02 {
@@ -168,7 +183,9 @@ section h2 {
 .project-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-content: space-between;
+    gap: 20px;
 }
 section a:hover {
     /* background-color: rgba(240, 172, 133,.3); */
@@ -215,15 +232,37 @@ section a:hover {
     margin: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+  
     
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
 @media screen and (max-width: 980px) {
-
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
     
-  }
+      header nav ul li a {
+        font-size: 20px;
+      }
+      .hero-cta {
+        width: 100%;
+        text-align: center;
+      }
+      
+     
   
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width: 768px) {
