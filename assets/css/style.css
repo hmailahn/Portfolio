@@ -187,10 +187,7 @@ section h2 {
     align-content: space-between;
     gap: 20px;
 }
-section a:hover {
-    /* background-color: rgba(240, 172, 133,.3); */
 
-}
 
 /* end of work section */
 
@@ -201,16 +198,26 @@ section a:hover {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    margin: 20px;
+    /* margin: 20px; */
 }
+
 
 .contact-me h3 {
     margin: 20px;
+    text-decoration: underline;
     /* display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center; */
     
+}
+
+.contact-me a:link {
+    color: var(--secondary-color);
+}
+
+.contact-me a:visited {
+    color: var(--secondary-color);
 }
 
 .column-layout {
@@ -220,19 +227,15 @@ section a:hover {
 }
 
 .header-column {
-    /* width: 33%; */
     border-right: 4px solid var(--secondary-color);
     display: flex;
+   
 }
 .content-column{
-/* width: 100%; */
-    /* width: 66%; */
-   
-   /* think about canceling out? */
     margin: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
   
     
 }
@@ -257,11 +260,7 @@ section a:hover {
       header nav ul li a {
         font-size: 20px;
       }
-      .hero-cta {
-        width: 100%;
-        text-align: center;
-      }
-      
+    
      
   
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -275,4 +274,3 @@ section a:hover {
   
    
   }
-  
