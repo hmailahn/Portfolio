@@ -194,11 +194,11 @@ section h2 {
 
 /* contact info */
 
-.contact-me {
+.contact-me-container {
     display: flex;
-    justify-content: center;
+    /* justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: center; */
     /* margin: 20px; */
 }
 
@@ -223,7 +223,7 @@ section h2 {
 
 .column-layout {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
 }
 
@@ -236,7 +236,7 @@ section h2 {
     margin: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
   
     
 }
@@ -282,9 +282,13 @@ section h2 {
     .header-column {
         border-bottom: 4px solid var(--secondary-color);
         border-right: none;
+        justify-content: center;
     }
 
-    
+    .project-01 {
+        width: 500px;
+        height: 200px; 
+    }
   
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width: 768px) {
@@ -294,6 +298,12 @@ section h2 {
   
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
-  
+.project {
+    width: 200px;
+    height: 200px;
+}
    
   }
+
+
+  /* need to work on media query for contact me section
