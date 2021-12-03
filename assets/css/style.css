@@ -24,6 +24,9 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+/* header img {
+    display: absolute;
+} */
 
 header h1 {
     font-weight: bold;
@@ -66,16 +69,25 @@ header nav ul li a {
     background-position: center;
 }
 
+/* .hero img{
+    margin-right: 0px;
+} */
 .hero-cta {
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
     color: var(--primary-color);
+}
+.hero img{
+    margin-right: 120px;
+    margin-top: 20px;
 }
 
 .hero h2 {
    float: right;
    background-color: var(--secondary-color);
    font-size: 30px;
-   margin: 140px 10px 0 0;
+   margin: 10px 20px 0 0;
    padding: 10px;
 }
 
@@ -252,11 +264,18 @@ section h2 {
         font-size: 20px;
       }
     
-    .hero-cta, .hero h2 {
+    .hero-cta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
-        text-align: center;
         font-size: 25px;
-    } 
+    }
+
+    .hero img,
+    .hero h2 {
+        margin-right: 0;
+    }
 
     .content-column {
         flex-direction: column;
