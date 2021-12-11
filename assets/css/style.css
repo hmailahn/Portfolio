@@ -37,7 +37,7 @@ header h1 {
 }
 
 header nav{
-    margin: 7px 0;
+    margin: 10px 0 7px 0;
 }
 
 header nav ul {
@@ -53,8 +53,16 @@ header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 1.55vw;
-    text-decoration: underline;
+    text-decoration: none;
     color: var(--primary-color);
+    padding: 10px 15px;
+
+}
+
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
 
 }
 /* header/ navbar styles end */
@@ -253,17 +261,29 @@ section h2 {
     header {
         padding-bottom: 0;
         justify-content: center;
+        position: relative;
     }
     header h1 {
         width: 100%;
+        display: flex;
+        margin: 0 160px;
+        padding-bottom: 14px;
+        justify-content: center;
         text-align: center;
+        border-bottom: 3px solid var(--primary-color);
     }
     header nav ul {
-        margin-top: 20px;
+        
+        display: flex;
+        flex-direction: column;
+        margin-top: 7px;
         width: 100%;
-        justify-content: center;
+        align-items: space-around;
       }
     
+      header nav ul li {
+          padding: 7px;
+      }
       header nav ul li a {
         font-size: 20px;
       }
