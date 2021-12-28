@@ -177,8 +177,8 @@ section h2 {
  .project-01 {
      background-image: url("../images/run-buddy.jpg");
      background-position: right;
-     width: 1000px;
-     height: 400px;
+     /* width: 1000px;
+     height: 400px; */
  }
 
  .project-02 {
@@ -204,10 +204,7 @@ section h2 {
 }
 
 .project-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-between;
+    
     gap: 20px;
 }
 
@@ -231,29 +228,11 @@ section h2 {
     color: var(--secondary-color);
 }
 
-.column-layout {
-    display: flex;
-    justify-content: space-evenly;
 
-}
-
-.header-column {
-    border-right: 4px solid var(--border-color);
-    display: flex;
-   
-}
-.content-column{
-    margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
   
     
-}
-.contact-me-container {
-    display: flex;
-    
-}
+
+
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
@@ -300,7 +279,7 @@ section h2 {
     .hero h2 {
         margin-right: 0;
     }
-
+/* 
     .content-column {
         flex-direction: column;
         flex-wrap: wrap;
@@ -316,7 +295,7 @@ section h2 {
         
         border-right: none;
         justify-content: center;
-    }
+    } */
 
     .project-01 {
         width: 500px;
