@@ -16,6 +16,6 @@ IF YOU SCROLL DOWN YOU SEE MY ABOUT ME SECTION. HERE ARE A COUPLE PARAGRAPHS ABO
 * CSS
 
 ## WEBSITE
-HERE IS A SCREENSHOT OF THE FINISHED PRODUCT: https://github.com/hmailahn/Portfolio/blob/main/assets/images/screenshot.png
+![image](https://github.com/hmailahn/Portfolio/blob/main/assets/images/screenshot.png)
 HERE IS A LINK TO THE DEPOLYED PRODUCT:https://hmailahn.github.io/Portfolio/  
 HERE IS THE LINK TO THE REPOSITORY :https://github.com/hmailahn/Portfolio
